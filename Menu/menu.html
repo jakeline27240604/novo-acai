@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Projeto com Tailwind CSS</title>
+    <!-- <link rel="stylesheet" href="css/tailwind.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <body class="flex justify-center items-center bg-purple-900 h-screen">
+      <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+        <div class="min-h-screen   flex flex-col justify-center">
+          <div class=" top-2 left-6 right-200 z-50 bg-Pink-900 p-4">
+            <div class="relative py-2  sm:max-w-xl mx-auto ">
+              <div class=" top-2 left-500 right-200 z-50 bg-Pink-900 p-4"></div>
+                <nav x-data="{ open: false } ">
+                  <div class=" w-5  left-500  top-1/2  transform  -translate-x-1/2 -translate-y-1/2">
+                   <button class=" w-7 h-10  hover:bg-green-500  rounded " >
+                    <span  class="block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                    <span  class="block absolute  h-0.5 w-5 text-white bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
+                    <span  class="block absolute  h-0.5 w-7 text-white bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                </div>
+            </button>
+        </nav>
+    </div>
+</div>
+   
+      
+    <!-- container da página -->
+     <div class="test-center">
+        <!-- Inserção da imagem -->
+        <img src="açaí2.png"  class="w-64 h-150 object-cover rounded">
+        
+    <div class="space-y-4"> 
+      <button class="w-64 bg-green-500 hover:bg-green-900 text-black font-bold py-2 px-4 rounded-full"><w-60>
+      CARDÁPIO 
+      </button>
+      
+      <div class="space-y-4">
+      <button class="w-64 bg-green-500 hover:bg-green-900 text-black font-bold py-2 px-4 rounded-full"><w-60>
+      PROMOÇÕES
+      </button>
+   
+    <div class="space-y-4">
+      <button class="w-64 bg-green-500 hover:bg-green-900 text-black font-bold py-2 px-4 rounded-full"><w-60>
+      INFORMÇÕES
+      </button>
+    </div> 
+     
+    
+        
+    </div> 
+  
+  </body>
+</html>
+
