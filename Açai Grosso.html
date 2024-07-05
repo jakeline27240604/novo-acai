@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Card Estiloso com Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex flex-col justify-items-center items-center bg-gray-200">
+        <!-- logo -->
+        <div>
+        
+            <img class="w-60 h-40 mr-4 object-cover object-center" src="img/Jate açai.jpg"
+                alt="Imagem do Card">
+              
+        </div>
+        <!-- card -->
+        <div class="container mx-auto mt-4">
+            <div class="max-w-md mx-auto bg-green-300 rounded-lg overflow-hidden shadow-lg">
+                <img class="w-40 h-30 mr-4 object-cover object-center" src="img/acai.png"
+                     alt="Imagem do Card">
+                <div class="p-4">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2">Açai</h2>
+                    <p class="text-gray-600">Açaí Grosso - R$ 25,00 / 1 litro de açaí 70% polpa</p>
+                    <div class="mt-4">
+                        <a href="#" class="inline-block bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-700">Adicionar ao carrinho
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- botao -->
+        <button class="bg-gray-500 my-4 text-white font-bold p-4 rounded hover:bg-gray-800">
+            Confirmar!
+        </button>
+        <!-- icones -->
+        <div class="grid grid-cols-4 gap-4 my-10">
+            <div>
+                <img class="h-10" src="img/carrinho.svg" alt="Carrinho de compras">
+            </div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
+        </div>
+    </div>
+</body>
+
+</html>
